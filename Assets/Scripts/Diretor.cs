@@ -35,7 +35,7 @@ public class Diretor : MonoBehaviour
         }
     }
 
-    void onPacienteSaiu()
+    void OnPacienteSaiu()
     {
         dificuldade += aceleracaoDificuldade;
         GenerateDoenca();

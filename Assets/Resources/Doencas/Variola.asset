@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f660575647b0bfe478a150610a05e446, type: 3}
-  m_Name: PlaceHolder
+  m_Name: Variola
   m_EditorClassIdentifier: 
-  nome: PlaceHolder
-  transmissao: 0
-  letalidade: 0
+  nome: Variola
+  transmissao: 3
+  letalidade: 3
   sintomas:
   - {fileID: 11400000, guid: 8e5020e58d32ec740876b12dfca5d2f0, type: 2}
   - {fileID: 11400000, guid: 81ed63a89b10c7f4bb0299e541ae7451, type: 2}
   - {fileID: 11400000, guid: 8c6381d1cb0ea134589e58499ae5163c, type: 2}
-  - {fileID: 11400000, guid: dda011d6471d6d24ea94dbe445bfd907, type: 2}
-  dificuldade: 0
+  dificuldade: 2
   descricao: "Esse doen\xE7a acontece quando um paciente n\xE3o existe, esse texto
     n\xE3o deveria estar aparecendo para voc\xEA, ladr\xE3o."
