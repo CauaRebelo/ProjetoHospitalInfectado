@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -17,6 +18,8 @@ public class Computador : MonoBehaviour
 
     public int totalElements;
 
+    bool sintomaEncontrado = true;
+
     void Start()
     {
         totalElements = ContentHolder.transform.childCount;
@@ -33,26 +36,23 @@ public class Computador : MonoBehaviour
             if (i < doencas.Length)
             {
                 doenca = (Doenca)doencas[i];
-                Element[i].transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = doenca.nome;
+                Element[i].transform.GetComponent<BotaoDoencaComputador>().SetName(doenca);
             }
         }
     }
 
-    void onSintomaSelect()
+    public void AddSintoma(Sintoma sintoma)
     {
-        //sintomasFiltrar.Add(Prancheta.transform.gameObject.GetComponent<EscolherSintoma>().GetUltimoSintoma());
-        ////foreach(Doenca doenca in doencasFiltrado)
-        //{
-        //    //if(doenca.sintomas.Any(sintomasFiltrar.Contains))
-        //    {
-        //        //gamb
-        //    }
-        //}
+        sintomasFiltrar.Add(sintoma);
+        sintomaEncontrado = true;
+        Search();
     }
 
-    void onSintomaDeselect()
+    public void RemoveSintoma(Sintoma sintoma)
     {
-        //sintomasFiltrar.Remove(Prancheta.transform.gameObject.GetComponent<EscolherSintoma>().GetUltimoSintoma());
+        sintomasFiltrar.Remove(sintoma);
+        sintomaEncontrado = true;
+        Search();
     }
 
     // Update is called once per frame
@@ -67,17 +67,43 @@ public class Computador : MonoBehaviour
 
         int achados = 0;
 
-        Debug.Log(SearchText);
-
         for (int i = 0; i < doencas.Length; i++)
         {
             searchedElements++;
             doenca = (Doenca)doencas[i];
+            bool sintomaNaoComp = false;
+
             if (doenca.nome.Length >= searchTxtlenght && achados < totalElements)
             {
-                if (SearchText.ToLower() == doenca.nome.Substring(0, searchTxtlenght).ToLower()) //&& doenca.sintomas.Any(sintomasFiltrar.Contains)
+                if (SearchText.ToLower() == doenca.nome.Substring(0, searchTxtlenght).ToLower())
                 {
-                    Element[achados].transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = doenca.nome;
+                    foreach(Sintoma sintoma in sintomasFiltrar)
+                    {
+                        Debug.Log(doenca.nome + "tem " + sintoma.nome + "?");
+                        foreach (Sintoma sintomy in doenca.sintomas)
+                        {
+                            if(sintoma != sintomy)
+                            {
+                                sintomaEncontrado = false;
+                            }
+                            else
+                            {
+                                sintomaEncontrado = true;
+                                break;
+                            }
+                        }
+                        if (sintomaEncontrado == false)
+                        {
+                            sintomaNaoComp = true;
+                            break;
+                        }
+                    }
+                    if (sintomaNaoComp == true)
+                    {
+                        sintomaNaoComp = false;
+                        continue;
+                    }
+                    Element[achados].transform.GetComponent<BotaoDoencaComputador>().SetName(doenca);
                     Element[achados].SetActive(true);
                     achados++;
                 }
