@@ -11,7 +11,11 @@ public class Diretor : MonoBehaviour
     private Doenca doencaEscolhida;
     void Start()
     {
+        dia = Info_Progresso.dia;
+        dificuldade = dia * 2;
+        aceleracaoDificuldade = dia + 1;
         doencas = Resources.LoadAll("Doencas", typeof(Doenca));
+        GenerateDoenca();
     }
 
     public Doenca GetDoenca()
@@ -19,16 +23,21 @@ public class Diretor : MonoBehaviour
         return doencaEscolhida;
     }
 
-    void onPacienteSaiu()
+    void GenerateDoenca()
     {
-        dificuldade += aceleracaoDificuldade;
-        while(true)
+        while (true)
         {
             doencaEscolhida = (Doenca)doencas[Random.Range(0, doencas.Length)];
-            if(doencaEscolhida.dificuldade <= dia)
+            if (doencaEscolhida.dificuldade <= dia)
             {
                 break;
             }
         }
+    }
+
+    void onPacienteSaiu()
+    {
+        dificuldade += aceleracaoDificuldade;
+        GenerateDoenca();
     }
 }

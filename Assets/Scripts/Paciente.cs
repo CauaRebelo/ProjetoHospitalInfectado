@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Paciente : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public string nome;
+    public Doenca doenca;
     void Start()
     {
         
