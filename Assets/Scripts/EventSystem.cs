@@ -55,9 +55,9 @@ public class EventSystem : MonoBehaviour
     public event Action onTerminarVideo;
     public void TerminarVideo()
     {
-        if (onComecar != null)
+        if (onTerminarVideo != null)
         {
-            onComecar();
+            onTerminarVideo();
 
         }
     }

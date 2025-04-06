@@ -18,6 +18,8 @@ public class Computador : MonoBehaviour
 
     public int totalElements;
 
+    public bool tutorial = false;
+
     bool sintomaEncontrado = true;
 
     void Start()
@@ -29,6 +31,11 @@ public class Computador : MonoBehaviour
         Element = new GameObject[totalElements];
 
         Doenca doenca;
+
+        if(tutorial)
+        {
+            return;
+        }
 
         for (int i = 0; i < totalElements; i++)
         {
@@ -43,6 +50,10 @@ public class Computador : MonoBehaviour
 
     public void AddSintoma(Sintoma sintoma)
     {
+        if (tutorial)
+        {
+            return;
+        }
         sintomasFiltrar.Add(sintoma);
         sintomaEncontrado = true;
         Search();
@@ -50,6 +61,10 @@ public class Computador : MonoBehaviour
 
     public void RemoveSintoma(Sintoma sintoma)
     {
+        if (tutorial)
+        {
+            return;
+        }
         sintomasFiltrar.Remove(sintoma);
         sintomaEncontrado = true;
         Search();
@@ -58,6 +73,10 @@ public class Computador : MonoBehaviour
     // Update is called once per frame
     public void Search()
     {
+        if (tutorial)
+        {
+            return;
+        }
         string SearchText = SearchBar.GetComponent<TMP_InputField>().text;
         int searchTxtlenght = SearchText.Length;
 

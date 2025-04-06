@@ -20,6 +20,7 @@ public class Diretor : MonoBehaviour
         if(tutorial)
         {
             doencaEscolhida = doencaTutorial;
+            patientManagers[0].ChangeState(true);
             return;
         }
         dia = Info_Progresso.dia;

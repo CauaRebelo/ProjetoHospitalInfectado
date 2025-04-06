@@ -2,21 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogoComecoTimers : MonoBehaviour
 {
     public TMP_Text dialogo;
-    public TMP_Text dialogo2;
     public GameObject cena;
     public GameObject panel;
     public GameObject dialogueBox;
-    public GameObject dialogueBox2;
+    public GameObject monitor;
+    public GameObject counter;
     public GameObject diretor;
     public GameObject paciente;
 
     void Start()
     {
         StartCoroutine(PrimeiroMomento());
+        EventSystem.current.onTerminarVideo += OnTerminarVideo;
+        EventSystem.current.onPatientExit += OnPatientExit;
 
     }
 
@@ -31,10 +34,28 @@ public class DialogoComecoTimers : MonoBehaviour
         panel.SetActive(false);
         cena.SetActive(true);
         yield return new WaitForSeconds(1f);
-        dialogueBox.SetActive(true);
         dialogo.text = "...";
         yield return new WaitForSeconds(1f);
+        dialogo.text = "";
+        dialogo.transform.gameObject.SetActive(false);
         dialogueBox.SetActive(false);
-        dialogueBox.SetActive(true);
+        monitor.SetActive(true);
+        counter.SetActive(true);
+    }
+
+    public void OnTerminarVideo()
+    {
+        monitor.SetActive(false);
+        counter.SetActive(false);
+        diretor.SetActive(true);
+        paciente.SetActive(true);
+    }
+
+    public void On()
+    {
+        monitor.SetActive(false);
+        counter.SetActive(false);
+        diretor.SetActive(true);
+        paciente.SetActive(true);
     }
 }
