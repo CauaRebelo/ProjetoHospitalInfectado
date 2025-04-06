@@ -6,7 +6,7 @@ public static class Info_Progresso
 {
     private static int p_dia = 0;
     private static int p_dinheiro = 0;
-    private static float p_pacienciaTimer = 8000f;
+    private static float p_pacienciaTimer = 300f;
 
     public static int dia
     {
