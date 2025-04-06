@@ -79,7 +79,6 @@ public class Computador : MonoBehaviour
                 {
                     foreach(Sintoma sintoma in sintomasFiltrar)
                     {
-                        Debug.Log(doenca.nome + "tem " + sintoma.nome + "?");
                         foreach (Sintoma sintomy in doenca.sintomas)
                         {
                             if(sintoma != sintomy)

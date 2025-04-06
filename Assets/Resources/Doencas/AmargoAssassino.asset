@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f660575647b0bfe478a150610a05e446, type: 3}
+  m_Name: Amargo Assassino
+  m_EditorClassIdentifier: 
+  nome: Amargo Assassino
+  transmissao: 0
+  letalidade: 1
+  sintomas:
+  - {fileID: 11400000, guid: 319eb8c987f4480479fff42c32200085, type: 2}
+  - {fileID: 11400000, guid: e73f7b315fab1654a8016c86e916293a, type: 2}
+  - {fileID: 11400000, guid: 8e5020e58d32ec740876b12dfca5d2f0, type: 2}
+  dificuldade: 0
+  descricao: "Esse doen\xE7a acontece quando um paciente n\xE3o existe, esse texto
+    n\xE3o deveria estar aparecendo para voc\xEA, ladr\xE3o."

@@ -21,6 +21,11 @@ public class RaioXAnimatorController : MonoBehaviour
         agentAnimator.SetInteger("Anomaly", val);
     }
 
+    private void SetGottenAnomalyAnimation(int val)
+    {
+        agentAnimator.SetInteger("GottenAnomaly", val);
+    }
+
     public void AnimateOpen(bool val)
     {
         SetOpenAnimation(val);
@@ -33,5 +38,10 @@ public class RaioXAnimatorController : MonoBehaviour
     public void AnimateAnomaly(int val)
     {
         SetAnomalyAnimation(val);
+    }
+
+    public void AnimateGottenAnomaly(int val)
+    {
+        SetGottenAnomalyAnimation(val);
     }
 }

@@ -19,14 +19,12 @@ public class BotaoDoencaComputador : MonoBehaviour
         doenca.letalidade = doency.letalidade;
         doenca.dificuldade = doency.dificuldade;
         doenca.sintomas = doency.sintomas;
-        Debug.Log(doenca.nome);
         this.gameObject.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = doency.nome;
     }
 
     public Doenca ChamarDadosDoenca(Doenca doency)
     {
         doency = this.doenca;
-        Debug.Log(doenca.nome);
         return doenca;
     }
 

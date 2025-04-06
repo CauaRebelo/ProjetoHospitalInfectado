@@ -25,7 +25,6 @@ public class DadosDoenca : MonoBehaviour
     public void ReceberDoenca()
     {
         doenca = this.gameObject.transform.GetComponent<BotaoDoencaComputador>().doenca;
-        Debug.Log(doenca.name);
         OnGiveTitulo?.Invoke(doenca.name);
         OnGiveDescricao?.Invoke(doenca.descricao);
         OnGiveSintoma1?.Invoke(doenca.sintomas[0].nome);

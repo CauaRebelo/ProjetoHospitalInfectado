@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f660575647b0bfe478a150610a05e446, type: 3}
+  m_Name: Nervosismo Mortal
+  m_EditorClassIdentifier: 
+  nome: Nervosismo Mortal
+  transmissao: 2
+  letalidade: 3
+  sintomas:
+  - {fileID: 11400000, guid: 8e5020e58d32ec740876b12dfca5d2f0, type: 2}
+  - {fileID: 11400000, guid: c8fd7dd9b3c77ff4e99c49242e2dcfc3, type: 2}
+  - {fileID: 11400000, guid: 8c6381d1cb0ea134589e58499ae5163c, type: 2}
+  dificuldade: 0
+  descricao: "O paciente apresenta sintomas de nervosismo extremo, eventualmente
+    perdendo completamente a capacidade de socializar, eventualmente se isolando
+    e levando ao obito. Extremamente Letal mas \xE9 muito rara."

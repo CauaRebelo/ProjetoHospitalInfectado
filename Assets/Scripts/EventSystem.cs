@@ -21,4 +21,34 @@ public class EventSystem : MonoBehaviour
 
         }
     }
+
+    public event Action onAcertou;
+    public void Acertou()
+    {
+        if (onAcertou != null)
+        {
+            onAcertou();
+
+        }
+    }
+
+    public event Action onErrou;
+    public void Errou()
+    {
+        if (onErrou != null)
+        {
+            onErrou();
+
+        }
+    }
+
+    public event Action onComecar;
+    public void Comecar()
+    {
+        if (onComecar != null)
+        {
+            onComecar();
+
+        }
+    }
 }

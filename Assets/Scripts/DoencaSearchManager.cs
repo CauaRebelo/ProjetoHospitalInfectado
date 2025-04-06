@@ -20,6 +20,8 @@ public class DoencaSearchManager : MonoBehaviour
 
     public int totalElements;
 
+    bool sintomaEncontrado = true;
+
     void Start()
     {
         totalElements = ContentHolder.transform.childCount;
@@ -33,29 +35,26 @@ public class DoencaSearchManager : MonoBehaviour
         for (int i = 0; i < totalElements; i++)
         {
             Element[i] = ContentHolder.transform.GetChild(i).gameObject;
-            if(i < doencas.Length)
+            if (i < doencas.Length)
             {
                 doenca = (Doenca)doencas[i];
-                Element[i].transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = doenca.nome;
+                Element[i].transform.GetComponent<BotaoDoencaComputador>().SetName(doenca);
             }
         }
     }
 
-    void onSintomaSelect()
+    public void AddSintoma(Sintoma sintoma)
     {
-        //sintomasFiltrar.Add(Prancheta.transform.gameObject.GetComponent<EscolherSintoma>().GetUltimoSintoma());
-        ////foreach(Doenca doenca in doencasFiltrado)
-        //{
-        //    //if(doenca.sintomas.Any(sintomasFiltrar.Contains))
-        //    {
-        //        //gamb
-        //    }
-        //}
+        sintomasFiltrar.Add(sintoma);
+        sintomaEncontrado = true;
+        Search();
     }
 
-    void onSintomaDeselect()
+    public void RemoveSintoma(Sintoma sintoma)
     {
-        //sintomasFiltrar.Remove(Prancheta.transform.gameObject.GetComponent<EscolherSintoma>().GetUltimoSintoma());
+        sintomasFiltrar.Remove(sintoma);
+        sintomaEncontrado = true;
+        Search();
     }
 
     // Update is called once per frame
@@ -70,25 +69,50 @@ public class DoencaSearchManager : MonoBehaviour
 
         int achados = 0;
 
-        Debug.Log(SearchText);
-
-        for(int i = 0; i < doencas.Length;i++)
+        for (int i = 0; i < doencas.Length; i++)
         {
             searchedElements++;
             doenca = (Doenca)doencas[i];
-            if(doenca.nome.Length >= searchTxtlenght && achados < totalElements)
+            bool sintomaNaoComp = false;
+
+            if (doenca.nome.Length >= searchTxtlenght && achados < totalElements)
             {
-                if (SearchText.ToLower() == doenca.nome.Substring(0, searchTxtlenght).ToLower()) //&& doenca.sintomas.Any(sintomasFiltrar.Contains)
+                if (SearchText.ToLower() == doenca.nome.Substring(0, searchTxtlenght).ToLower())
                 {
-                    Element[achados].transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = doenca.nome;
+                    foreach (Sintoma sintoma in sintomasFiltrar)
+                    {
+                        foreach (Sintoma sintomy in doenca.sintomas)
+                        {
+                            if (sintoma != sintomy)
+                            {
+                                sintomaEncontrado = false;
+                            }
+                            else
+                            {
+                                sintomaEncontrado = true;
+                                break;
+                            }
+                        }
+                        if (sintomaEncontrado == false)
+                        {
+                            sintomaNaoComp = true;
+                            break;
+                        }
+                    }
+                    if (sintomaNaoComp == true)
+                    {
+                        sintomaNaoComp = false;
+                        continue;
+                    }
+                    Element[achados].transform.GetComponent<BotaoDoencaComputador>().SetName(doenca);
                     Element[achados].SetActive(true);
                     achados++;
                 }
             }
         }
-        if(achados < totalElements)
+        if (achados < totalElements)
         {
-            for(int i = achados; i < totalElements; i++)
+            for (int i = achados; i < totalElements; i++)
             {
                 Element[i].SetActive(false);
             }
