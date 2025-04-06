@@ -332,7 +332,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.35
+  m_fontSize: 15.95
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -713,6 +713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &23973367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,6 +741,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!114 &23973368
 MonoBehaviour:
@@ -2059,6 +2061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &112330536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2286,6 +2289,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &123418526
 GameObject:
@@ -2560,7 +2564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 56.118454}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &152139242
@@ -3751,8 +3755,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 276.3, y: 8}
-  m_SizeDelta: {x: 58.15, y: 30}
+  m_AnchoredPosition: {x: 2, y: -216}
+  m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216058820
 MonoBehaviour:
@@ -3835,7 +3839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49976766, g: 1, b: 0.27058828, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4404,8 +4408,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2541654, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3c6f8c536d7f34c498d889d907eb335e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4424,8 +4428,8 @@ Transform:
   m_GameObject: {fileID: 248113809}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 12, y: 6, z: 1}
+  m_LocalPosition: {x: 0, y: 0.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4953,6 +4957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &266622490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5180,6 +5185,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &271573731
 GameObject:
@@ -5782,6 +5788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &330135351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5809,6 +5816,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!114 &330135352
 MonoBehaviour:
@@ -5958,6 +5966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &340958677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5985,6 +5994,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!114 &340958678
 MonoBehaviour:
@@ -6623,7 +6633,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.05
+  m_fontSize: 22.35
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6709,7 +6719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 281.93, y: 84}
+  m_AnchoredPosition: {x: 317.3, y: 217.6}
   m_SizeDelta: {x: 58.15, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &396901692
@@ -6805,7 +6815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.26981127, b: 0.26981127, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7585,6 +7595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &466587930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7812,6 +7823,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &475636999
 GameObject:
@@ -8039,6 +8051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &484036981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8066,6 +8079,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!114 &484036982
 MonoBehaviour:
@@ -8372,6 +8386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &498006507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8399,6 +8414,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!114 &498006508
 MonoBehaviour:
@@ -11261,6 +11277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &679881341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11288,6 +11305,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!114 &679881342
 MonoBehaviour:
@@ -11646,6 +11664,42 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 248113809}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 128232796}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 984083199}
+        m_TargetAssemblyTypeName: RaioXAnimatorController, Assembly-CSharp
+        m_MethodName: AnimateDespawn
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &721644956
 MonoBehaviour:
@@ -12377,6 +12431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 11400000, guid: 52511c95fb0fb514193e6e9e9d314502, type: 2}
+  tutorial: 0
 --- !u!114 &767278415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12404,6 +12459,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!114 &767278416
 MonoBehaviour:
@@ -12887,7 +12943,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 71943542}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.8194666
+  m_Size: 0.81946665
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13180,6 +13236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &840437321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13407,6 +13464,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &859797479
 GameObject:
@@ -14249,7 +14307,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Y
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15644,6 +15702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1118662297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15671,6 +15730,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!114 &1118662298
 MonoBehaviour:
@@ -17519,6 +17579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1248078143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17546,6 +17607,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!114 &1248078144
 MonoBehaviour:
@@ -18125,7 +18187,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.7
+  m_fontSize: 22.35
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -18268,6 +18330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1288388186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18495,6 +18558,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &1295217655
 GameObject:
@@ -18723,6 +18787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1301236585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18950,6 +19015,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &1312212719
 GameObject:
@@ -19685,6 +19751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 11400000, guid: 52511c95fb0fb514193e6e9e9d314502, type: 2}
+  tutorial: 0
 --- !u!114 &1361668563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19876,7 +19943,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  doenca: {fileID: 0}
+  tutorial: 1
+  doenca: {fileID: 11400000, guid: 52511c95fb0fb514193e6e9e9d314502, type: 2}
 --- !u!1 &1366668442
 GameObject:
   m_ObjectHideFlags: 0
@@ -21014,6 +21082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1464910235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21241,6 +21310,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &1469328681
 GameObject:
@@ -22033,6 +22103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1498827301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22260,6 +22331,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &1502582240
 GameObject:
@@ -24613,6 +24685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1630369995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24840,6 +24913,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &1638465314
 GameObject:
@@ -25068,6 +25142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1640584084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25295,6 +25370,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &1643354035
 GameObject:
@@ -25920,7 +25996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26521,6 +26597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1750930636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26748,6 +26825,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &1756827807
 GameObject:
@@ -27350,6 +27428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1772888560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27577,6 +27656,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &1774045995
 GameObject:
@@ -28861,7 +28941,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.01, y: -84.26}
+  m_AnchoredPosition: {x: 161.01, y: -28.141548}
   m_SizeDelta: {x: 295.44, y: 236.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842651496
@@ -29600,6 +29680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &1908123199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29827,6 +29908,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &1917040641
 GameObject:
@@ -31052,6 +31134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &2060502371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31279,6 +31362,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &2071121116
 GameObject:
@@ -31373,6 +31457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &2071121121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31600,6 +31685,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &2097265339
 GameObject:
@@ -32265,6 +32351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &2110561698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32492,6 +32579,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &2112702997
 GameObject:
@@ -32586,6 +32674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doenca: {fileID: 0}
+  tutorial: 0
 --- !u!114 &2112703002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32813,6 +32902,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tutorial: 0
   doenca: {fileID: 0}
 --- !u!1 &2133317504
 GameObject:

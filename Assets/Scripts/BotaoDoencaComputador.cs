@@ -7,6 +7,8 @@ public class BotaoDoencaComputador : MonoBehaviour
 {
     public Doenca doenca;
 
+    public bool tutorial = false;
+
     public void Start()
     {
     }
@@ -24,6 +26,11 @@ public class BotaoDoencaComputador : MonoBehaviour
 
     public Doenca ChamarDadosDoenca(Doenca doency)
     {
+        if(tutorial)
+        {
+            doency = doenca;
+            return doenca;
+        }
         doency = this.doenca;
         return doenca;
     }

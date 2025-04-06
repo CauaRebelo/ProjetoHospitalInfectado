@@ -28,8 +28,14 @@ public class DadosDoenca : MonoBehaviour
         OnGiveTitulo?.Invoke(doenca.name);
         OnGiveDescricao?.Invoke(doenca.descricao);
         OnGiveSintoma1?.Invoke(doenca.sintomas[0].nome);
-        OnGiveSintoma2?.Invoke(doenca.sintomas[1].nome);
-        OnGiveSintoma3?.Invoke(doenca.sintomas[2].nome);
+        if (doenca.sintomas.Count >= 2)
+        {
+            OnGiveSintoma2?.Invoke(doenca.sintomas[1].nome);
+        }
+        if (doenca.sintomas.Count >= 3)
+        {
+            OnGiveSintoma3?.Invoke(doenca.sintomas[2].nome);
+        }
         OnGiveTransmissao?.Invoke(doenca.transmissao.ToString());
         OnGiveLetalidade?.Invoke(doenca.letalidade.ToString());
         OnGiveNivel?.Invoke(doenca.dificuldade.ToString());

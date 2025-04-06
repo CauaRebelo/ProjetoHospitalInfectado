@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dabc170ca83b87143a68093ce0c2547e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDoLevelDeJogo: DayOne
+  nomeDoLevelDeJogo: Tutorial
   painelMenuInicial: {fileID: 1317670255}
   painelOpcoesDoSom: {fileID: 342163642}
   painelDeOpcoesDeIdioma: {fileID: 308406404}
