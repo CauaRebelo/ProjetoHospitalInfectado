@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f660575647b0bfe478a150610a05e446, type: 3}
-  m_Name: ComaConsciente
+  m_Name: Coma Consciente
   m_EditorClassIdentifier: 
   nome: Coma Consciente
   transmissao: 1

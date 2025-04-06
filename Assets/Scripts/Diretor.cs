@@ -9,12 +9,19 @@ public class Diretor : MonoBehaviour
     public int dia = 0;
     public int aceleracaoDificuldade = 0;
     public int failsafe = 1;
+    public bool tutorial = false;
     private Object[] doencas;
     public List<PatientManager> patientManagers = new List<PatientManager>();
     private Doenca doencaEscolhida;
+    public Doenca doencaTutorial;
     public Doenca doencaPlayer;
     void Start()
     {
+        if(tutorial)
+        {
+            doencaEscolhida = doencaTutorial;
+            return;
+        }
         dia = Info_Progresso.dia;
         dificuldade = dia * 2;
         aceleracaoDificuldade = dia + 1;
@@ -65,6 +72,10 @@ public class Diretor : MonoBehaviour
 
     void OnPatientExit()
     {
+        if(tutorial)
+        {
+            return;
+        }
         dificuldade += aceleracaoDificuldade;
         StartCoroutine(OnCooldown());
     }

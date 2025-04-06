@@ -9,6 +9,7 @@ public class Paciente : MonoBehaviour
     public Doenca doenca;
     public int paciencia = 8;
     public int tipoDialogo = -1;
+    public bool tutorial = false;
     public Sintoma sintoma;
     public List<string> dialogos = new List<string>();
     public GameObject sprite;
@@ -79,6 +80,13 @@ public class Paciente : MonoBehaviour
             dialogos.Add("Não tenho o que responder a você.");
             dialogos.Add("Tá olhando o que?");
             dialogos.Add("Eu sei que é seu trabalho, mas não quero papo.");
+        }
+        if(tutorial)
+        {
+            dialogos.Add("Minha *funga* saude *funga* está perfeitamente *funga* bem... *espirra*");
+            dialogos.Add("*funga*");
+            dialogos.Add("*funga* Você é chato, sabia? *espirra*");
+            dialogos.Add("*espirra* Desculpe, aqui tem muita poeira... *funga*");
         }
         int aux = Random.Range(0, dialogos.Count);
         OnFala?.Invoke(dialogos[aux]);
