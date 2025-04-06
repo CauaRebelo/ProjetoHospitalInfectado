@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuDePause1 : MonoBehaviour
 {
+
     public GameObject painel_do_menu;
 
     // Start is called before the first frame update
@@ -32,7 +34,7 @@ public class MenuDePause1 : MonoBehaviour
             painel_do_menu.SetActive(true);
         }
 
-        // pausado -. funcione
+        // pausado -> funcione
         else if (Time.timeScale == 0) 
         {
             Time.timeScale = 1;
@@ -40,5 +42,21 @@ public class MenuDePause1 : MonoBehaviour
         }
 
         
+    }
+
+    public void Continuar()
+    {
+        PausarJogo();
+    }
+
+    public void SairDoJogo()
+    {
+        Debug.Log("Sair do Jogo");
+        Application.Quit();
+    }
+
+    public void config()
+    {
+
     }
 }
