@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ public class Diretor : MonoBehaviour
     private Doenca doencaEscolhida;
     public Doenca doencaTutorial;
     public Doenca doencaPlayer;
+    public TMP_Text scoreTexto;
     void Start()
     {
         if(tutorial)
@@ -31,6 +33,8 @@ public class Diretor : MonoBehaviour
         EventSystem.current.onAcertou += OnAcertou;
         EventSystem.current.onPatientExit += OnPatientExit;
         patientManagers[Random.Range(0, patientManagers.Count)].ChangeState(true);
+        Info_Progresso.score = 0;
+        scoreTexto.text = Info_Progresso.score.ToString();
         GenerateDoenca();
     }
 
@@ -90,7 +94,9 @@ public class Diretor : MonoBehaviour
 
     public void OnErrou()
     {
-        if(failsafe >= 1)
+        Info_Progresso.score -= 100;
+        scoreTexto.text = Info_Progresso.score.ToString();
+        if (failsafe >= 1)
         {
             failsafe--;
             //Mensagem de Aviso que a proxima faz perder dinehrio
@@ -100,6 +106,8 @@ public class Diretor : MonoBehaviour
 
     public void OnAcertou()
     {
+        Info_Progresso.score += 100;
+        scoreTexto.text = Info_Progresso.score.ToString();
         //Ganha dinheiro
     }
 }

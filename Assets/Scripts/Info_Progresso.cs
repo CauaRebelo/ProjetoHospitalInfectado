@@ -7,6 +7,7 @@ public static class Info_Progresso
     private static int p_dia = 0;
     private static int p_dinheiro = 0;
     private static float p_pacienciaTimer = 300f;
+    private static int p_score = 0;
 
     public static int dia
     {
@@ -18,6 +19,12 @@ public static class Info_Progresso
     {
         get { return p_dinheiro; }
         set { p_dinheiro = value; }
+    }
+
+    public static int score
+    {
+        get { return p_score; }
+        set { p_score = value; }
     }
 
     public static float pacienciaTimer

@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f660575647b0bfe478a150610a05e446, type: 3}
-  m_Name: Coco Maldito
+  m_Name: Conjutivite
   m_EditorClassIdentifier: 
-  nome: Coco Maldito
+  nome: Conjutivite
   transmissao: 2
-  letalidade: 2
+  letalidade: 0
   sintomas:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 8e5020e58d32ec740876b12dfca5d2f0, type: 2}
   dificuldade: 0
-  descricao: "Esse doen\xE7a acontece quando um paciente n\xE3o existe, esse texto
-    n\xE3o deveria estar aparecendo para voc\xEA, ladr\xE3o."
+  descricao: "Uma doen\xE7a simples que irrita o olho do paciente, bem contagiosa
+    mas geralmente n\xE3o muito preocupante."

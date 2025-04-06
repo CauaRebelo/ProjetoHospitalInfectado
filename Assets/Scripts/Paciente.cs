@@ -76,17 +76,20 @@ public class Paciente : MonoBehaviour
         }
         else
         {
-            dialogos.Add("Não enche.");
-            dialogos.Add("Não tenho o que responder a você.");
-            dialogos.Add("Tá olhando o que?");
-            dialogos.Add("Eu sei que é seu trabalho, mas não quero papo.");
-        }
-        if(tutorial)
-        {
-            dialogos.Add("Minha *funga* saude *funga* está perfeitamente *funga* bem... *espirra*");
-            dialogos.Add("*funga*");
-            dialogos.Add("*funga* Você é chato, sabia? *espirra*");
-            dialogos.Add("*espirra* Desculpe, aqui tem muita poeira... *funga*");
+            if (tutorial)
+            {
+                dialogos.Add("Minha sniff saude sniff está sniff em perfeitas sniff condições! Aaatchiiim!");
+                dialogos.Add("Atchiiim");
+                dialogos.Add("sniff Você é chato, sabia? Atchiiim");
+                dialogos.Add("Atchiiim Desculpe, aqui tem muita poeira... sniff");
+            }
+            else
+            {
+                dialogos.Add("Não enche.");
+                dialogos.Add("Não tenho o que responder a você.");
+                dialogos.Add("Tá olhando o que?");
+                dialogos.Add("Eu sei que é seu trabalho, mas não quero papo.");
+            }
         }
         int aux = Random.Range(0, dialogos.Count);
         OnFala?.Invoke(dialogos[aux]);
@@ -133,6 +136,7 @@ public class Paciente : MonoBehaviour
 
     public void Left()
     {
+        dialogos.Clear();
         EventSystem.current.PatientExit();
         sprite.SetActive(true);
         anomaly1.SetActive(false);
