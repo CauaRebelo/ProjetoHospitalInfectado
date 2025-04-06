@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f660575647b0bfe478a150610a05e446, type: 3}
-  m_Name: ComaConsciente
+  m_Name: Coco Maldito
   m_EditorClassIdentifier: 
-  nome: Coma Consciente
-  transmissao: 1
-  letalidade: 0
+  nome: Coco Maldito
+  transmissao: 2
+  letalidade: 2
   sintomas:
-  - {fileID: 11400000, guid: 8e5020e58d32ec740876b12dfca5d2f0, type: 2}
-  - {fileID: 11400000, guid: 81ed63a89b10c7f4bb0299e541ae7451, type: 2}
-  - {fileID: 11400000, guid: 8c6381d1cb0ea134589e58499ae5163c, type: 2}
-  dificuldade: 2
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  dificuldade: 0
   descricao: "Esse doen\xE7a acontece quando um paciente n\xE3o existe, esse texto
     n\xE3o deveria estar aparecendo para voc\xEA, ladr\xE3o."
