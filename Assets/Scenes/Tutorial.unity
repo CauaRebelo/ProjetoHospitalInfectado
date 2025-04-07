@@ -2504,7 +2504,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 644863117
   m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &128232800
@@ -6142,6 +6142,7 @@ MonoBehaviour:
   - {fileID: 446722500}
   doencaTutorial: {fileID: 11400000, guid: 52511c95fb0fb514193e6e9e9d314502, type: 2}
   doencaPlayer: {fileID: 0}
+  scoreTexto: {fileID: 0}
 --- !u!1 &355121559
 GameObject:
   m_ObjectHideFlags: 0
